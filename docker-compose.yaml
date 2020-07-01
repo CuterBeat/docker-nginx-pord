@@ -1,0 +1,16 @@
+version: "3"
+services:
+   nginx:
+     image: nginx
+     ports:
+       - 80:80
+       - 443:443
+     volumes:
+       - /home/cert:/home/cert
+       - /home/www:/home/www
+       - ./nginx.conf:/etc/nginx/nginx.conf
+       - ./conf.d/:/etc/nginx/conf.d/
+       - ./logs:/var/log/nginx
+       - /etc/localtime:/etc/localtime:ro #配置容器时间同步
+     restart: always
+     container_name: nginx
