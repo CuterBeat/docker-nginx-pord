@@ -3,7 +3,7 @@
 **目录结构**
 
 
-![目录结构](mulujiegou.png)
+![目录结构](https://raw.githubusercontent.com/Faceiun/docker-nginx-pord/master/mulujiegou.png)
 
 ```txt
 conf.d		站点配置文件目录
